@@ -72,6 +72,7 @@ export function SocietiesSection() {
 }
 
 function DetailList({ label, items }) {
+  if (!items || items.length === 0) return null;
   return (
     <div>
       <p className="mb-2 text-xs font-semibold text-slate">{label}</p>
